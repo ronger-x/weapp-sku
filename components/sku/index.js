@@ -1,4 +1,4 @@
-import computedBehavior from 'miniprogram-computed'
+const computedBehavior = require('miniprogram-computed').behavior
 import { fenToYuan } from './utils/currency'
 import { isSkuChoosable, isAllSelected, getSkuComb, getSelectedSkuValues, getSkuImgValue } from './utils/helper'
 
@@ -124,7 +124,7 @@ Component({
 
   lifetimes: {
     attached () {
-    
+
     },
   },
 
@@ -154,7 +154,7 @@ Component({
           selectedSku[key] = valueId
         }
       })
-      
+
       this.setData({ selectedSku })
     },
 
@@ -193,7 +193,7 @@ Component({
 
   observers: {
     show (value) {
-    
+
     },
 
     skuTree () {

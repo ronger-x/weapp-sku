@@ -1,5 +1,5 @@
 // components/sku/components/row-item/index.js
-import computedBehavior from 'miniprogram-computed'
+const computedBehavior = require('miniprogram-computed').behavior
 import { isSkuChoosable } from '../../utils/helper'
 
 Component({
